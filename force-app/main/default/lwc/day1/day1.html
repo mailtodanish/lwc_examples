@@ -1,0 +1,47 @@
+<template>
+    <div class="container">
+        <h1>Hi <span>{greeting}</span></h1>
+        <lightning-input label="Your Name" value={greeting} onchange={handleChanges}></lightning-input>
+
+        <lightning-input type="checkbox" label="Red" checked> </lightning-input>
+
+        <lightning-input type="color" label="Color" value="#EEEEEE">
+        </lightning-input>
+
+        <lightning-input type="date" label="Birthday"> </lightning-input>
+
+        <lightning-input type="datetime" label="Created date"> </lightning-input>
+
+        <lightning-input type="email" label="Email" pattern=".+@example.com" placeholder="username@example.com">
+        </lightning-input>
+
+        <lightning-input type="file" label="Attachment" accept="image/png, .zip" multiple>
+        </lightning-input>
+
+
+        <lightning-input type="number" label="Number" value="12345">
+        </lightning-input>
+
+        <lightning-input type="number" label="Price" value="12345" formatter="currency" step=".01">
+        </lightning-input>
+
+        <lightning-input type="password" label="Password"> </lightning-input>
+
+
+        <lightning-input type="range" label="Number" min="0" max="10">
+        </lightning-input>
+
+        <lightning-input type="search" label="Search"> </lightning-input>
+
+        <lightning-input type="search" label="Search" is-loading> </lightning-input>
+
+        <lightning-input type="tel" label="Telephone" value="343-343-3434" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </lightning-input>
+
+        <lightning-input type="time" label="Time"> </lightning-input>
+
+        <lightning-input type="toggle" label="Toggle value" checked></lightning-input>
+
+    </div>
+
+</template>

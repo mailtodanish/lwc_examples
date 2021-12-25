@@ -1,0 +1,26 @@
+:host {
+    --primary: #3dcfd3;
+    --dark: black;
+    --pure: white;
+    --ternary: rgb(124 123 123);
+    --light: rgb(245, 241, 241);
+    --sds-c-checkbox-toggle-switch-color-background: orange;
+    --sds-c-checkbox-toggle-color-background-checked: green;
+}
+
+.container {
+    background: var(--pure);
+    padding: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+
+.container h1 {
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.container h1 span {
+    color: var(--primary)
+}
