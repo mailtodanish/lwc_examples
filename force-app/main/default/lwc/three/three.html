@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="My Contact Record" icon-name="standard:account">
+        <template if:true={accounts_data}>
+            <template for:each={accounts_data} for:item="object">
+                <p key={object.Id}>{object.Name}-{object.Type}</p>
+            </template>
+        </template>
+    </lightning-card>
+   
+</template>
